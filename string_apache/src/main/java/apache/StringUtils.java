@@ -232,7 +232,7 @@ public class StringUtils {
      * @param str  the String to check, may be null
      * @return <code>true</code> if the String is null, empty or whitespace
      * @since 2.0
-     *
+     * 字符串是 空字符串或null时，返回true；
      */
     public static boolean isBlank(String str) {
         int strLen;
@@ -262,6 +262,7 @@ public class StringUtils {
      * @return <code>true</code> if the String is
      *  not empty and not null and not whitespace
      * @since 2.0
+     * 字符串 不是 空字符串或null时 返回true
      */
     public static boolean isNotBlank(String str) {
         return !StringUtils.isBlank(str);
@@ -287,6 +288,7 @@ public class StringUtils {
      * @return the trimmed text, never <code>null</code>
      * @deprecated Use the clearer named {@link #trimToEmpty(String)}.
      *             Method will be removed in Commons Lang 3.0.
+     *             字符串 为 null 或空字符串时 为空，否则返回去除两端空格的字符串
      */
     public static String clean(String str) {
         return str == null ? EMPTY : str.trim();
@@ -314,6 +316,7 @@ public class StringUtils {
      *
      * @param str  the String to be trimmed, may be null
      * @return the trimmed string, <code>null</code> if null String input
+     * 去掉字符串两端空格
      */
     public static String trim(String str) {
         return str == null ? null : str.trim();
@@ -340,6 +343,7 @@ public class StringUtils {
      * @return the trimmed String,
      *  <code>null</code> if only chars &lt;= 32, empty or null String input
      * @since 2.0
+     * 先去除两端空格，若为空字符串或null， 返回null；否则返回字符串
      */
     public static String trimToNull(String str) {
         String ts = trim(str);
@@ -366,6 +370,7 @@ public class StringUtils {
      * @param str  the String to be trimmed, may be null
      * @return the trimmed String, or an empty String if <code>null</code> input
      * @since 2.0
+     * 去除两端空格，若为空字符串或null， 返回空字符；否则返回字符串
      */
     public static String trimToEmpty(String str) {
         return str == null ? EMPTY : str.trim();
@@ -394,6 +399,7 @@ public class StringUtils {
      *
      * @param str  the String to remove whitespace from, may be null
      * @return the stripped String, <code>null</code> if null String input
+     * 去除字符串两端空格
      */
     public static String strip(String str) {
         return strip(str, null);
@@ -421,6 +427,7 @@ public class StringUtils {
      * @return the stripped String,
      *  <code>null</code> if whitespace, empty or null String input
      * @since 2.0
+     * 去除两端空格，若为空则返回null
      */
     public static String stripToNull(String str) {
         if (str == null) {
@@ -451,6 +458,7 @@ public class StringUtils {
      * @param str  the String to be stripped, may be null
      * @return the trimmed String, or an empty String if <code>null</code> input
      * @since 2.0
+     * 去除两端空格，若为空或null，则返回空字符
      */
     public static String stripToEmpty(String str) {
         return str == null ? EMPTY : strip(str, null);

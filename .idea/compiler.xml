@@ -6,6 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="commonUtil" />
+        <module name="kafka_util" />
+        <module name="spark_util" />
         <module name="string_apache" />
       </profile>
     </annotationProcessing>

@@ -10,6 +10,9 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>string_apache</module>
+        <module>kafka_util</module>
+        <module>commonUtil</module>
+        <module>spark_util</module>
     </modules>
 
 

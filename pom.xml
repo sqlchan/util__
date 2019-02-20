@@ -13,6 +13,13 @@
         <module>kafka_util</module>
         <module>commonUtil</module>
         <module>spark_util</module>
+        <module>time</module>
+        <module>quary</module>
+        <module>timejob</module>
+        <module>time</module>
+        <module>test</module>
+        <module>testtime</module>
+        <module>Hbase_Util</module>
     </modules>
 
 

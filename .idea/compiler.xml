@@ -7,10 +7,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="commonUtil" />
+        <module name="Hbase_Util" />
         <module name="kafka_util" />
         <module name="spark_util" />
         <module name="string_apache" />
+        <module name="testtime" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="quary" target="1.5" />
+      <module name="test" target="1.5" />
+      <module name="time" target="1.5" />
+      <module name="timejob" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

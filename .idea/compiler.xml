@@ -9,6 +9,7 @@
         <module name="commonUtil" />
         <module name="Hbase_Util" />
         <module name="kafka_util" />
+        <module name="scala_util" />
         <module name="spark_util" />
         <module name="string_apache" />
         <module name="testtime" />

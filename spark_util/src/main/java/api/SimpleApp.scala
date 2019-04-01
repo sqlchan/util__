@@ -81,7 +81,9 @@ object SimpleApp {
 //    rdd1.join(rdd2)
 //    rdd1.leftOuterJoin(rdd2)
 //    rdd1.rightOuterJoin(rdd2)
-
+    //===================
+//    var rdd1 = sc.makeRDD(1 to 10)
+//    rdd1.reduce(_+_ )
 
   }
 }

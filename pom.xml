@@ -21,6 +21,7 @@
         <module>testtime</module>
         <module>Hbase_Util</module>
         <module>scala_util</module>
+        <module>es</module>
     </modules>
 
 

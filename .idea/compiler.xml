@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="commonUtil" />
+        <module name="es" />
         <module name="Hbase_Util" />
         <module name="kafka_util" />
         <module name="scala_util" />
